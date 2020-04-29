@@ -5,9 +5,9 @@ troducido por Robert C. Martin (mejor conocido como el tío Bob) a principios de
 
 Entre los objetivos de tener en cuenta estos 5 principios a la hora de escribir código encontramos:
 
-> Crear un software eficaz: que cumpla con su cometido y que sea robusto y estable.
-> Escribir un código limpio y flexible ante los cambios: que se pueda modificar fácilmente según necesidad, que sea reutilizable y mantenible.
-> Permitir escalabilidad: que acepte ser ampliado con nuevas funcionalidades de manera ágil.
+- Crear un software eficaz: que cumpla con su cometido y que sea robusto y estable.
+- Escribir un código limpio y flexible ante los cambios: que se pueda modificar fácilmente según necesidad, que sea reutilizable y mantenible.
+- Permitir escalabilidad: que acepte ser ampliado con nuevas funcionalidades de manera ágil.
 
 En este sentido la aplicación de los principios SOLID está muy relacionada con la comprensión y el uso de patrones de diseño, que nos permitirán mantener una alta cohesión y, por tanto, un bajo acoplamiento de software. En definitiva, desarrollar un software de calidad.
 
@@ -22,8 +22,9 @@ Los principios SOLID son eso: principios, es decir, buenas prácticas que pueden
 
 S (SRP) – Principio de responsabilidad única (Single responsibility principle)
 -----------------
->> A class should have one, and only one, reason to change.
->> Una clase debe tener una, y solo una, razón para cambiar.
+> A class should have one, and only one, reason to change.
+
+> Una clase debe tener una, y solo una, razón para cambiar.
 
 Una clase debe encapsular una única funcionalidad; en caso de encapsular
 más de una funcionalidad, sería necesario separar la clase en múltiples clases.
@@ -34,8 +35,9 @@ dible y fácil de mantener.
 
 O (OCP) – Principio de abierto/cerrado (Open/closed principle)
 -----------------
->> You should be able to extend a classes behavior, without modifying it.
->> Debería poder extender el comportamiento de una clase, sin modificarlo.
+> You should be able to extend a classes behavior, without modifying it.
+
+> Debería poder extender el comportamiento de una clase, sin modificarlo.
 
 Debemos preparar nuestro código para que esté abierto a extensiones y ce-
 rrado a modificaciones. La idea es que el código ya escrito, y que ha pasado las pruebas unitarias, esté cerrado a modificaciones, es decir, que aquello que funcione no se toque.
@@ -45,8 +47,9 @@ estar abierto a cambios, es decir, que podamos extender estas clases mediante el
 
 L (LSP) – Principio de sustitución de Liskov (Liskov substitution principle)
 -----------------
->> Derived classes must be substitutable for their base classes.
->> Las clases derivadas deben ser sustituibles por sus clases base.
+> Derived classes must be substitutable for their base classes.
+
+> Las clases derivadas deben ser sustituibles por sus clases base.
 
 Este principio define que los objetos de una superclase deben ser reemplazables por objetos de sus subclases sin "romper" la aplicación o sistema y sin efectos secundarios. Eso requiere que los objetos de las subclases se comporten de la misma manera que los objetos de la superclase de forma que se puedan usar de forma indistinta.
 
@@ -58,13 +61,15 @@ Para conseguir esto las subclases deberían seguir estas reglas:
 
 I (ISP) – Principio de segregación de la interfaz  (Interface segregation principle)
 -----------------
->> Make fine grained interfaces that are client specific.
->> Haga interfaces de grano fino que sean específicas del cliente.
+> Make fine grained interfaces that are client specific.
+
+> Haga interfaces de grano fino que sean específicas del cliente.
 
 
 D (DIP) – Principio de inversión de la dependencia (Dependency inversion principle)
 -----------------
->> Depend on abstractions, not on concretions.
->> Depende de abstracciones, no de concreciones.
+> Depend on abstractions, not on concretions.
+
+> Depende de abstracciones, no de concreciones.
 
 
